@@ -4,3 +4,4 @@ tests.xml
 *.ospx
 
 coverage/*
+oscript_modules/*
