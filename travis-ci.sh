@@ -6,6 +6,7 @@ echo "==================================="
 echo "Установка зависимостей тестирования"
 opm install 1testrunner; 
 opm install 1bdd;
+opm install yaml;
 opm install coverage;
 
 opm install; 
