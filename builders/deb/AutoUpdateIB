@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mono /usr/share/AutoUpdateIB/bin/AutoUpdateIB.exe "$@"

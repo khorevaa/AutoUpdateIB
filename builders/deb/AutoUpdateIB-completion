@@ -1,0 +1,16 @@
+_AutoUpdateIB_complete()
+{
+	local cur opts
+	COMPREPLY=()
+	cur="${COMP_WORDS[COMP_CWORD]}"
+	if [[ $COMP_CWORD == 1 ]] ; then
+		opts="update agent"
+		COMPREPLY=( $(compgen -W "$opts" -- ${cur}) )
+		return 0
+	fi
+	COMPREPLY=( $(compgen -df ${cur}) )
+	return 0
+}
+complete -F _AutoUpdateIB_complete AutoUpdateIB
+
+# vim: filetype=sh

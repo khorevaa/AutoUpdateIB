@@ -2,6 +2,7 @@ bdd-log*.xml
 bin/*
 tests.xml
 *.ospx
-
+*.exe
+*.deb
 coverage/*
 oscript_modules/*

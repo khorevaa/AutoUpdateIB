@@ -1,0 +1,11 @@
+version: '3'
+services:
+  deb-builder:
+    build: ./deb/
+    image: deb-builder
+    volumes: 
+    - ./deb/settings:/opt/debian/
+    - ./dist:/opt/dist/
+  rpm-builder:
+    build: ./rpm/
+    image: rpm-builder

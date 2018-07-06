@@ -1,0 +1,16 @@
+Package: AutoUpdateIB
+Version: 0.1.0 
+Provides: AutoUpdateIB
+Maintainer: Khorevaa <khorevaa@gmail.com> 
+Architecture: all
+Section: interpreters
+Description: 1S Enterprise Info Base Updater.
+  Cross-platform 1S Enterprise Info Base Updater 
+  With RabbitMQ support
+Depends: mono-runtime,
+  libmono-system-core4.0-cil | libmono-system-core4.5-cil,
+  libmono-system4.0-cil | libmono-system4.5-cil,
+  libmono-corlib4.0-cil | libmono-corlib4.5-cil,
+  libmono-i18n4.0-all | libmono-i18n4.5-all
+Recommends: mono-complete
+Origin: https://github.com/khorevaa/AutoUpdateIB
