@@ -2,7 +2,7 @@
 
 opm run make
 cp bin/AutoUpdateIB.exe builders/deb/
-VERSION=`mono ./builders/deb/AutoUpdateIB.exe -v`
+VERSION=`mono ./builders/deb/AutoUpdateIB.exe --version`
 
 docker-compose -f builders/docker-compose.yml build deb-builder
 docker-compose -f builders/docker-compose.yml up deb-builder
