@@ -17,4 +17,4 @@ payload:
       user: admin
       password: password
       file: 
-        path: example-repo-local/test/cf/10/1.1/1cv8.cfu
+        path: example-repo-local/test/cf/10/1.1/org-test-cf-1.1.cfu

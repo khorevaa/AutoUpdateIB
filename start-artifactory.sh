@@ -3,7 +3,7 @@ docker run -d --hostname artifactory --name artifactory -p 8081:8081 docker.bint
 
 sleep 45
 
-until curl -i -u admin:password http://localhost:8081/api/ >/dev/null ; do
+until curl -i -u admin:password http://localhost:8081/artifactory/api/ >/dev/null ; do
 
   >&2 echo "artifactory is unavailable - sleeping"
 
