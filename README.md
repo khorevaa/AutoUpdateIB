@@ -70,25 +70,25 @@
 
 * Работа в режиме Агента
 
-```shell
-Команда: agent, a
- Выполняет запуск в режиме агента обновления
+    ```shell
+    Команда: agent, a
+    Выполняет запуск в режиме агента обновления
 
-Строка запуска: AutoUpdateIB agent [ОПЦИИ] -- SERVER
+    Строка запуска: AutoUpdateIB agent [ОПЦИИ] -- SERVER
 
-Аргументы:
-  SERVER        Адрес сервера RabbitMQ (env $RMQ_SERVER)
+    Аргументы:
+    SERVER        Адрес сервера RabbitMQ (env $RMQ_SERVER)
 
-Опции:
-  -u, --user                    пользователь сервера RabbitMQ (env $RMQ_USER)
-  -p, --pwd                     пароль пользователя сервера RabbitMQ (env $RMQ_PWD, $RMQ_PASSWORD)
-  -q, --queue                   имя очереди получения сообщений на сервере RabbitMQ (env $RMQ_QUEUE)
-  -P, --port                    порт сервера RabbitMQ (env $RMQ_PORT) (по умолчанию 15672)
-  -e, --exchange-name           имя точки ответа сервера RabbitMQ (env $RMQ_EXCHANGE_NAME)
-  -R, --routing-key             ключ маршрутизации сервера RabbitMQ (env $RMQ_ROUTING_KEY)
-  -H, --virtual-host            виртуальный хост на сервере RabbitMQ (env $RMQ_VHOST) (по умолчанию %2F)
-  -t, --queue-timer             таймер опроса сервера очереди  (по умолчанию 60)
-      --workers-dir             рабочий каталог процессов  (по умолчанию /home/khorevaa/.local/share/AutoUpdateIB)
-  -M, --workers-max-count       количество рабочих процессов агента (0 - автоматический расчет)  (по умолчанию 0)
-  -T, --worker-timeuot          таймаут перезапуска рабочего процесса агента при зависании  (по умолчанию 0)
-```
+    Опции:
+    -u, --user                    пользователь сервера RabbitMQ (env $RMQ_USER)
+    -p, --pwd                     пароль пользователя сервера RabbitMQ (env $RMQ_PWD, $RMQ_PASSWORD)
+    -q, --queue                   имя очереди получения сообщений на сервере RabbitMQ (env $RMQ_QUEUE)
+    -P, --port                    порт сервера RabbitMQ (env $RMQ_PORT) (по умолчанию 15672)
+    -e, --exchange-name           имя точки ответа сервера RabbitMQ (env $RMQ_EXCHANGE_NAME)
+    -R, --routing-key             ключ маршрутизации сервера RabbitMQ (env $RMQ_ROUTING_KEY)
+    -H, --virtual-host            виртуальный хост на сервере RabbitMQ (env $RMQ_VHOST) (по умолчанию %2F)
+    -t, --queue-timer             таймер опроса сервера очереди  (по умолчанию 60)
+        --workers-dir             рабочий каталог процессов  (по умолчанию /home/khorevaa/.local/share/AutoUpdateIB)
+    -M, --workers-max-count       количество рабочих процессов агента (0 - автоматический расчет)  (по умолчанию 0)
+    -T, --worker-timeuot          таймаут перезапуска рабочего процесса агента при зависании  (по умолчанию 0)
+    ```
