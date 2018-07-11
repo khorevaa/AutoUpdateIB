@@ -12,10 +12,10 @@ until curl -i -u admin:password http://localhost:8081/api/ >/dev/null ; do
 done
 
 curl -i -u admin:password -T ./tests/fixtures/distr/1.0/1Cv8.cf  \
-     http://localhost:8081/artifactory/example-repo-local/test/cf/10/1.0/1Cv8.cf
+     http://localhost:8081/artifactory/example-repo-local/org/test/cf/10/1.1/org-test-cf-1.0.cf
 
 curl -i -u admin:password -T ./tests/fixtures/distr/1.1/1cv8.cf  \
-     http://localhost:8081/artifactory/example-repo-local/test/cf/10/1.1/1cv8.cf
+     http://localhost:8081/artifactory/example-repo-local/org/test/cf/10/1.1/org-test-cf-1.1.cf
 
 curl -i -u admin:password -T ./tests/fixtures/distr/1.1/1cv8.cfu  \
-     http://localhost:8081/artifactory/example-repo-local/test/cf/10/1.1/1cv8.cfu
+     http://localhost:8081/artifactory/example-repo-local/org/test/cf/10/1.1/org-test-cf-1.1.cfu
