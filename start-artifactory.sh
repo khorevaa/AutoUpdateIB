@@ -1,7 +1,7 @@
 #!/bin/sh
 docker run -d --hostname artifactory --name artifactory -p 8081:8081 docker.bintray.io/jfrog/artifactory-oss
 
-sleep 25
+sleep 45
 
 until curl -i -u admin:password http://localhost:8081/api/ >/dev/null ; do
 
