@@ -38,3 +38,4 @@
     | Обновление модуль test (cf) из артифактори | tests/fixtures/arfifactory-cf-module.yaml | 
     | Обновление модуль test (cfu) из артифактори | tests/fixtures/arfifactory-cfu-module.yaml | 
     | Минимальные настройки получения из артифактори | tests/fixtures/minimal-arfifactory.yaml |
+    | Обновление из каталога | tests/fixtures/bindata-run-before.yaml | 
