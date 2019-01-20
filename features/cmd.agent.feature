@@ -11,8 +11,8 @@
     И Я создаю временный каталог и сохраняю его в переменной "ТестоваяБаза"
     И Я создаю тестовую базу в каталоге "ТестоваяБаза"
     И Я включаю отладку лога с именем "oscript.app.AutoUpdateIB"
-    И Я создаю ОчередьОбновленияRMQ
-    И Я устанавливаю настройки ОчередьОбновленияRMQ сервер "rabbit" порт "15672" пользователь "guest" пароль "guest" виртуальный хост "%2f" очередь "all.update" 
+    И Я создаю КлиентRMQ
+    И Я устанавливаю настройки КлиентRMQ сервер "localhost" порт "15672" пользователь "guest" пароль "guest" виртуальный хост "%2f" очередь "all.update" 
     И Я отправляю настройку обновления в очередь из файла <ПутьКФайлу> 
 
     Допустим Я добавляю параметр "agent" для команды "AutoUpdateIB"
@@ -22,7 +22,7 @@
     И Я добавляю параметр "-H %2f" для команды "AutoUpdateIB"
     И Я добавляю параметр "-P 15672" для команды "AutoUpdateIB"
     И Я добавляю параметр "-t 0" для команды "AutoUpdateIB"    
-    И Я добавляю параметр "rabbit" для команды "AutoUpdateIB"
+    И Я добавляю параметр "localhost" для команды "AutoUpdateIB"
     Когда Я выполняю команду "AutoUpdateIB"
     Тогда Вывод команды "AutoUpdateIB" содержит "Рабочий процесс завершил работу. Задание выполнено"
     И Вывод команды "AutoUpdateIB" не содержит "Внешнее исключение"
@@ -32,10 +32,10 @@
 Примеры:
     | Сценарий | ПутьКФайлу | 
     | Обновление из каталога | tests/fixtures/catalog.yaml | 
-    | Обновление (cfu) из каталога | tests/fixtures/catalog-cfu.yaml | 
+    # | Обновление (cfu) из каталога | tests/fixtures/catalog-cfu.yaml | 
     # | Обновление из артифактори | tests/fixtures/arfifactory-cf.yaml | 
     # | Обновление (cfu) из артифактори | tests/fixtures/arfifactory-cfu.yaml | 
     # | Обновление модуль test (cf) из артифактори | tests/fixtures/arfifactory-cf-module.yaml | 
     # | Обновление модуль test (cfu) из артифактори | tests/fixtures/arfifactory-cfu-module.yaml | 
     # | Минимальные настройки получения из артифактори | tests/fixtures/minimal-arfifactory.yaml |
-    | Обновление из каталога | tests/fixtures/bindata-run-before.yaml | 
+    # | Обновление из каталога | tests/fixtures/bindata-run-before.yaml | 
