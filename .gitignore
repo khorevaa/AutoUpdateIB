@@ -6,3 +6,4 @@ tests.xml
 *.deb
 coverage/*
 oscript_modules/*
+*.log
