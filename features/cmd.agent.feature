@@ -33,9 +33,9 @@
     | Сценарий | ПутьКФайлу | 
     | Обновление из каталога | tests/fixtures/catalog.yaml | 
     | Обновление (cfu) из каталога | tests/fixtures/catalog-cfu.yaml | 
-    | Обновление из артифактори | tests/fixtures/arfifactory-cf.yaml | 
-    | Обновление (cfu) из артифактори | tests/fixtures/arfifactory-cfu.yaml | 
-    | Обновление модуль test (cf) из артифактори | tests/fixtures/arfifactory-cf-module.yaml | 
-    | Обновление модуль test (cfu) из артифактори | tests/fixtures/arfifactory-cfu-module.yaml | 
-    | Минимальные настройки получения из артифактори | tests/fixtures/minimal-arfifactory.yaml |
+    # | Обновление из артифактори | tests/fixtures/arfifactory-cf.yaml | 
+    # | Обновление (cfu) из артифактори | tests/fixtures/arfifactory-cfu.yaml | 
+    # | Обновление модуль test (cf) из артифактори | tests/fixtures/arfifactory-cf-module.yaml | 
+    # | Обновление модуль test (cfu) из артифактори | tests/fixtures/arfifactory-cfu-module.yaml | 
+    # | Минимальные настройки получения из артифактори | tests/fixtures/minimal-arfifactory.yaml |
     | Обновление из каталога | tests/fixtures/bindata-run-before.yaml | 
