@@ -1,18 +1,19 @@
 routing_key: all.update
 properties:
-  Тип: update
-  КлючСообщения: 2d2a9915-e59f-4359-8e3c-f5b29b8a5645
-  АдресОтвета: report.update
-  ТипКонтента: application/json
+  type: update
+  message_id: 2d2a9915-e59f-4359-8e3c-f5b29b8a5645
+  reply_to: report.update
+  content_type: application/json
 payload: 
   Версия: 1.0
   Наименование: 'Тестовая_База'
   Код: 695
-  НастройкаПодключения:
+  ПараметрыПодключения:
     ФайловаяБаза: 
       ПутьККаталогу: <ТестоваяБаза>
-  Обновление: 
-    Файл: 
-      path: ./tests/fixtures/distr/1.1/1cv8.cfu
-      hash: 
-        ХешСумма: 6b2a4de8db2e1d45eac61fa8a9bce3fd
+  ПараметрыОбновленияКонфигурации:
+    update: 
+      file:  
+        path: ./tests/fixtures/distr/1.1/1cv8.cfu
+        hash: 
+          ХешСумма: 6b2a4de8db2e1d45eac61fa8a9bce3fd
