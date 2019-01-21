@@ -18,3 +18,4 @@
     | Сценарий | ПутьКФайлу | 
     | Обновление из каталога | tests/fixtures/catalog.yaml | 
     | Обновление (cfu) из каталога | tests/fixtures/catalog-cfu.yaml | 
+    | Использование бинарных данных перед обновлением | tests/fixtures/bindata-run-before.yaml | 
