@@ -32,7 +32,7 @@
 Примеры:
     | Сценарий | ПутьКФайлу | 
     | Обновление из каталога | tests/fixtures/catalog.yaml | 
-    # | Обновление (cfu) из каталога | tests/fixtures/catalog-cfu.yaml | 
+    | Обновление (cfu) из каталога | tests/fixtures/catalog-cfu.yaml | 
     # | Обновление из артифактори | tests/fixtures/arfifactory-cf.yaml | 
     # | Обновление (cfu) из артифактори | tests/fixtures/arfifactory-cfu.yaml | 
     # | Обновление модуль test (cf) из артифактори | tests/fixtures/arfifactory-cf-module.yaml | 
