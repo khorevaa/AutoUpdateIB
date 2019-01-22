@@ -1,0 +1,24 @@
+{
+    "НаборРасширений": [
+        {
+            "Имя": "Исправление",
+            "ПутьКФайлуРасширения": "F:\\github\\github\\AutoUpdateIB\\tests\\fixtures\\cfe\\Исправление.cfe",
+            "ЗащитаОтОпасныхДействий": false
+        },
+        {
+            "Имя": "Адаптация",
+            "ПутьКФайлуРасширения": "F:\\github\\github\\AutoUpdateIB\\tests\\fixtures\\cfe\\Адаптация.cfe",
+            "БезопасныйРежим": false
+        },
+        {
+            "Имя": "РасширениеСОшибкой",
+            "ПутьКФайлуРасширения": "F:\\github\\github\\AutoUpdateIB\\tests\\fixtures\\cfe\\РасширениеСОшибкой.cfe",
+            "БезопасныйРежим": false,
+            "Активно": false
+        },{
+            "Имя": "Дополнение",
+            "ПутьКФайлуРасширения": "F:\\github\\github\\AutoUpdateIB\\tests\\fixtures\\cfe\\Дополнение.cfe",
+            "Активно": false
+        }
+    ]
+}
