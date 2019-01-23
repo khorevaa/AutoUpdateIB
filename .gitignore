@@ -7,3 +7,5 @@ tests.xml
 coverage/*
 oscript_modules/*
 *.log
+
+.ragent/*
