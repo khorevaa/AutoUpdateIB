@@ -6,7 +6,10 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "opm build ."
+            "command": "opm run build-epf ^| opm run pack",
+            "problemMatcher": [
+                "$OneScript Linter"
+            ]
         }
     ]
 }
