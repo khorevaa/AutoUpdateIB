@@ -11,6 +11,11 @@
 			<ContextMenu name="ПараметрЗапускаОбработкиКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ПараметрЗапускаОбработкиРасширеннаяПодсказка" id="3"/>
 		</InputField>
+		<Button name="Выполнить" id="4">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Выполнить</CommandName>
+			<ExtendedTooltip name="ВыполнитьРасширеннаяПодсказка" id="5"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -20,4 +25,21 @@
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Выполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОбновление</Action>
+		</Command>
+	</Commands>
 </Form>
