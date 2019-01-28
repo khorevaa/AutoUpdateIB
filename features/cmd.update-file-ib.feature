@@ -30,3 +30,4 @@
     | Загрузка конфигурации | tests/fixtures/one-base.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Истина | Ложь| Ложь | Загрузка конфигурации в конфигуратор информационной базы |
     | Динамическое обновление | tests/fixtures/one-base.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Истина | Динамическое применение конфигурации информационной базы |
     | Обновление списка баз | tests/fixtures/many-bases.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | Загрузка обновления в конфигуратор информационной базы | 
+    | Встроенная обработка после обновления | tests/fixtures/internal-file.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | Выполнение события <ПослеОбновления> [0] | 
