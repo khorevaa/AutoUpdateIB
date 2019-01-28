@@ -13,7 +13,8 @@
     И Я включаю отладку лога с именем "oscript.app.AutoUpdateIB"
     И Я создаю КлиентRMQ
     И Я устанавливаю настройки КлиентRMQ сервер "localhost" порт "15672" пользователь "guest" пароль "guest" виртуальный хост "%2f" очередь "all.update" 
-    И Я отправляю настройку обновления в очередь из файла <ПутьКФайлу> 
+    И Я создаю файл настройки из файла <ПутьКФайлу> с значениями <ПутьКФайлуОбновления>, <ЗагрузитьКонфигурацию>, <ПредупрежденияКакОшибки>, <ДинамическоеОбновление> и сохраняю в переменную "FILE"
+    И Я отправляю настройку обновления в очередь из файла "FILE"
 
     Допустим Я добавляю параметр "agent" для команды "AutoUpdateIB"
     И Я добавляю параметр "-u guest" для команды "AutoUpdateIB"
@@ -30,12 +31,10 @@
 
     
 Примеры:
-    | Сценарий | ПутьКФайлу | 
-    | Обновление из каталога | tests/fixtures/catalog.yaml | 
-    | Обновление (cfu) из каталога | tests/fixtures/catalog-cfu.yaml | 
-    # | Обновление из артифактори | tests/fixtures/arfifactory-cf.yaml | 
-    # | Обновление (cfu) из артифактори | tests/fixtures/arfifactory-cfu.yaml | 
-    # | Обновление модуль test (cf) из артифактори | tests/fixtures/arfifactory-cf-module.yaml | 
-    # | Обновление модуль test (cfu) из артифактори | tests/fixtures/arfifactory-cfu-module.yaml | 
-    # | Минимальные настройки получения из артифактори | tests/fixtures/minimal-arfifactory.yaml |
-    # | Обновление из каталога | tests/fixtures/bindata-run-before.yaml | 
+    | Сценарий | ПутьКФайлу | ПутьКФайлуОбновления | ЗагрузитьКонфигурацию | ПредупрежденияКакОшибки | ДинамическоеОбновление | Результат |
+    | Простое обновление | tests/fixtures/catalog.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | Загрузка обновления в конфигуратор информационной базы |
+    | Обновление (cfu) | tests/fixtures/catalog-cfu.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | Загрузка обновления в конфигуратор информационной базы |
+    | Загрузка из cf | tests/fixtures/catalog.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Истина | Ложь| Ложь | Загрузка обновления в конфигуратор информационной базы |
+    | Динамическое обновление | tests/fixtures/catalog.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Истина | Динамическое применение конфигурации информационной базы |
+    | Использование бинарных данных перед обновлением | tests/fixtures/bindata-run-before.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | 1231 | 
+    | Использование бинарных данных после обновления | tests/fixtures/bindata-run-after.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | 1231 | 

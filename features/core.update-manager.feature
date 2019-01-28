@@ -19,6 +19,8 @@
 
     | Сценарий | ПутьКФайлу | ПутьКФайлуОбновления | ЗагрузитьКонфигурацию | ПредупрежденияКакОшибки | ДинамическоеОбновление | Результат |
     | Простое обновление | tests/fixtures/catalog.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | Загрузка обновления в конфигуратор информационной базы |
-    | Обновление (cfu) | tests/fixtures/catalog-cfu.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Истина | Ложь| Ложь | Загрузка обновления в конфигуратор информационной базы |
+    | Обновление (cfu) | tests/fixtures/catalog-cfu.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | Загрузка обновления в конфигуратор информационной базы |
+    | Загрузка из cf | tests/fixtures/catalog.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Истина | Ложь| Ложь | Загрузка обновления в конфигуратор информационной базы |
     | Динамическое обновление | tests/fixtures/catalog.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Истина | Динамическое применение конфигурации информационной базы |
-    | Использование бинарных данных перед обновлением | tests/fixtures/bindata-run-before.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | Загрузка обновления в конфигуратор информационной базы | 
+    | Использование бинарных данных перед обновлением | tests/fixtures/bindata-run-before.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | 1231 | 
+    | Использование бинарных данных после обновления | tests/fixtures/bindata-run-after.yaml | tests/fixtures/distr/1.1/1Cv8.cf | Ложь | Ложь| Ложь | 1231 | 
