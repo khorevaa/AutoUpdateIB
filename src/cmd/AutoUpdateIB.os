@@ -11,7 +11,7 @@
 //    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
-
+#Использовать yaml
 #Использовать cli
 #Использовать tempfiles
 #Использовать "../core"
@@ -33,6 +33,8 @@
 
 	Приложение.Опция("с config-file", "", "файл с настройкой приложения")
 			   .ПоУмолчанию(ПараметрыПриложения.ПутьКФайлуКонфигурацииПриложения());
+
+    Приложение.Опция("clear-cache", Ложь, "признак очистки кеша локальных файлов");
 
 	Приложение.ДобавитьКоманду("update u", "Выполняет одиночное обновление информационной базы 1С",
 								Новый КомандаUpdate);

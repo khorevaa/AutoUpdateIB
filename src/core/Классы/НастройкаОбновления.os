@@ -1,6 +1,7 @@
 
 #Использовать "./internal"
 #Использовать "./internal/files"
+#Использовать "./internal/cache"
 #Использовать "./internal/bindata"
 
 #Использовать logos
