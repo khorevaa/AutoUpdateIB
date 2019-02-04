@@ -5,8 +5,16 @@ tests.xml
 *.exe
 *.deb
 coverage/*
-oscript_modules/*
+# oscript_modules/*
 *.log
 test-base.yaml
 
 .ragent/*
+
+tests/fixtures/cfe/ОбработчикиВыгрузкиЗагрузки.cfe
+tests/fixtures/cfe/ОбработчикиВыгрузкиЗагрузки.cfe.md5
+
+tests/fixtures/cfe/Очереди.cfe
+tests/fixtures/cfe/Очереди.cfe.md5
+
+tests/fixtures/distr/ACC/*
