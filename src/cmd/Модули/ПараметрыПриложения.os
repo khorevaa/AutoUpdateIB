@@ -124,7 +124,7 @@
 	// МассивЛогов.Добавить("oscript.app.AutoUpdateIB.RunEnterprise");
 	// МассивЛогов.Добавить("oscript.app.AutoUpdateIB.backup");
 	// МассивЛогов.Добавить("oscript.lib.v8runner");
-	// МассивЛогов.Добавить("oscript.lib.v8rac");
+	// МассивЛогов.Добавить("oscript.lib.AutoUpdateIB.rmq");
 	
 	// МассивЛогов.Добавить("oscript.app.lib.cache");
 	// МассивЛогов.Добавить("oscript.app.lib.get-file");
