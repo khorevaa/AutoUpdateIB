@@ -21,6 +21,7 @@
     И Я добавляю параметр "-u guest" для команды "AutoUpdateIB"
     И Я добавляю параметр "-p guest" для команды "AutoUpdateIB"
     И Я добавляю параметр "-q all.update" для команды "AutoUpdateIB"
+    И Я добавляю параметр "--report-queue report.update" для команды "AutoUpdateIB"
     И Я добавляю параметр "-H %2f" для команды "AutoUpdateIB"
     И Я добавляю параметр "-P 15672" для команды "AutoUpdateIB"
     И Я добавляю параметр "-t 0" для команды "AutoUpdateIB"    
