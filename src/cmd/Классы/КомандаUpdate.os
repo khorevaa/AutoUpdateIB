@@ -1,4 +1,3 @@
-#Использовать "../../core"
 #Использовать datetime
 //    Copyright 2018 khorevaa
 // 
