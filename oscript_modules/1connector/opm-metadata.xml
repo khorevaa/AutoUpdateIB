@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
-    <name>1connector</name>
-    <version>1.0.3</version>
-    <author>Vladimir Bondarevskiy</author>
-    <author-email>vbondarevsky@gmail.com</author-email>
-    <description>Коннектор: удобный HTTP-клиент для OScript</description>
-    <engine-version>1.0.21</engine-version>
-</opm-metadata>
