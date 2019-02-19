@@ -1,0 +1,3 @@
+[submodule "oscript_modules/1commands"]
+	path = oscript_modules/1commands
+	url = git@github.com:khorevaa/1commands.git
