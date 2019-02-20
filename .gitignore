@@ -5,6 +5,7 @@ tests.xml
 *.exe
 *.deb
 coverage/*
+backup/*
 # oscript_modules/*
 *.log
 test-base.yaml
@@ -16,5 +17,5 @@ tests/fixtures/cfe/ОбработчикиВыгрузкиЗагрузки.cfe.md
 
 tests/fixtures/cfe/Очереди.cfe
 tests/fixtures/cfe/Очереди.cfe.md5
-
 tests/fixtures/distr/ACC/*
+templates/ib*
